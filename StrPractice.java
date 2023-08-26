@@ -18,7 +18,17 @@ public class StrPractice {
 
         String x ="10";
         int y = 20;
-        System.out.println(y+x);
+        System.out.println(y+x);    
 
-    }
+        // Another method
+        String name = new String("Ram");
+        name = name + "Kumar";
+        System.out.println(name);
+
+        String name1 = "Hari";
+        String name2 = "Hari";
+
+        System.out.println(name1 == name2);
+
+    }   
 }
