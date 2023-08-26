@@ -4,9 +4,6 @@ class Student{
     int marks;
 }
 
-
-
-
 public class ArrayOfObject {
     public static void main(String[] args){
 
