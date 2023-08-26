@@ -60,6 +60,8 @@ public class Array {
             System.out.println();
         }
 
+        System.out.println();
+
         // for each method
         for(int n[] : nums){
             for(int m: n){
@@ -68,6 +70,7 @@ public class Array {
             System.out.println();
         }
 
+        System.out.println();
 
         //jagged array  
         int[][] nums2 = new int[3][];
@@ -80,6 +83,15 @@ public class Array {
             for(int j=0;j<nums2[i].length;j++){
                 nums2[i][j] =(int) (Math.random() * 100);
                 System.out.print(nums2[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int n1[] : nums2){
+            for(int m1: n1){
+                System.out.print(m1 + " ");
             }
             System.out.println();
         }
