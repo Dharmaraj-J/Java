@@ -29,7 +29,7 @@ class B extends A{
 
 
 
-public class sup {
+public class Sup {
     public static void main(String[] args){
 
 
