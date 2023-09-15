@@ -15,5 +15,30 @@ public class EnumPrac {
             System.out.println(s + " : " + s.ordinal());
         }
         
+
+
+        // in switch statement
+
+        Status s = Status.SUCCESS;
+
+        switch(s){
+
+            case RUNNING:
+                System.out.println("All Good ");
+                break;
+
+            case FAILED:
+                System.out.println("Try Again");
+                break;
+
+            case PENDING:
+                System.out.println("Please Wait");
+                break;
+
+            case SUCCESS:
+                System.out.println("Done");    
+
+        }
+
     }
 }
