@@ -1,3 +1,9 @@
+class MyException extends Exception{
+    public MyException(String message){
+        super(message);
+    }
+}
+
 public class ThrowKeyWord {
     public static void main(String[] args) {
 
@@ -9,11 +15,19 @@ public class ThrowKeyWord {
             if(j == 0){
                 throw new ArithmeticException("I don't want to print zero");    // Throw keyword is used to throw the exception
             }
+            else if( j < 0){
+                throw new MyException("I don't want to print negative number");  // Custom Exception
+            }
         }
 
         catch(ArithmeticException e){
-            j = 18/1;                                              // Handling the exception
+            j = 18;                                              // Handling the exception
             System.out.println("thats the default output " + e);
+        }
+
+        catch(MyException e){
+            j = 18;
+            System.out.println("thats the default output "+ e);
         }
        
         catch(Exception e){
